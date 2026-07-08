@@ -1,0 +1,13 @@
+fastapi
+mangum
+pandas
+numpy
+python-multipart
+plotly
+openpyxl
+xlrd
+odfpy
+scikit-learn
+scipy
+statsmodels
+pyarrow
