@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-base: #07111f;
+  --bg-panel: rgba(255, 255, 255, 0.82);
+  --bg-card: rgba(255, 255, 255, 0.96);
+  --border: rgba(15, 23, 42, 0.08);
+  --accent: #2563eb;
+  --accent-light: #60a5fa;
+  --text-primary: #0f172a;
+  --text-muted: #475569;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --glow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+html, body, [class*="css"] { font-family: 'Inter', sans-serif !important; color: var(--text-primary) !important; }
+body {
+  background: #f5f7fb !important;
+  min-height: 100vh;
+}
+.stApp, .stAppViewContainer, [data-testid="stMain"], .main {
+  background: transparent !important;
+  min-height: 100vh;
+}
+section[data-testid="stSidebar"] { background: #ffffff !important; border-right: 1px solid #e5e7eb !important; box-shadow: none; }
+.bi-header { text-align:center; padding:2rem 1rem 1rem; }
+.bi-header h1 { font-size:2.3rem; font-weight:700; background:linear-gradient(135deg,#2563eb,#0ea5e9); -webkit-background-clip:text; -webkit-text-fill-color:transparent; letter-spacing:-0.02em; }
+.bi-header p { color: var(--text-muted); }
+.glass-panel {
+  background: #ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:var(--radius);
+  padding:1.1rem 1.15rem;
+  box-shadow: none;
+  margin-bottom:1rem;
+}
+.glass-panel:hover { box-shadow: none; border-color:#d1d5db; }
+.section-header { font-size:0.95rem; font-weight:600; color:var(--accent); margin:1rem 0 0.7rem; padding-bottom:0.4rem; border-bottom:1px solid var(--border); letter-spacing:0.01em; }
+.audit-log { background: rgba(248, 250, 252, 0.9); border:1px solid var(--border); border-radius:var(--radius-sm); padding:1rem; font-family: monospace; font-size:0.82rem; line-height:1.7; max-height:320px; overflow-y:auto; color:var(--text-muted); }
+.stTabs [data-baseweb="tab-list"] { background: #f3f4f6 !important; border-radius:999px !important; border:1px solid #e5e7eb !important; padding:0.15rem; }
+.stTabs [aria-selected="true"] { background: #2563eb !important; color:#fff !important; border-radius:999px !important; box-shadow: none !important; }
+.stButton > button { background: #2563eb !important; color:#fff !important; border:none !important; border-radius:999px !important; font-weight:600 !important; box-shadow: none !important; }
+.stButton > button:hover { opacity: 0.95; }
+.stDownloadButton > button { background: #111827 !important; color:#fff !important; border-radius:999px !important; }
+div[data-testid="stDataFrame"] { border-radius:14px; overflow:hidden; border:1px solid var(--border); }
+.page-enter { animation: fadeUp 340ms cubic-bezier(.2,.8,.2,1) both; }
+.chip { display:inline-flex; align-items:center; padding:0.28rem 0.6rem; border-radius:999px; background: rgba(37,99,235,0.08); color:var(--accent); font-size:0.78rem; font-weight:600; }
+.skeleton-block { background: linear-gradient(90deg, rgba(148,163,184,0.16), rgba(148,163,184,0.26), rgba(148,163,184,0.16)); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius:999px; }
+@keyframes fadeUp { from { opacity:0; transform: translateY(6px);} to { opacity:1; transform: translateY(0);} }
+@keyframes shimmer { from { background-position: 200% 0;} to { background-position: -200% 0;} }
