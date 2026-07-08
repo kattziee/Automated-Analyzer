@@ -274,7 +274,7 @@ Automated Reporting
 Shahul Hameed Ali M
 
 GitHub: https://github.com/kattziee
-LinkedIn: [Click here !](www.linkedin.com/in/shahulhameedalim)
+LinkedIn: [Click here !](https://www.linkedin.com/in/shahulhameedalim)
 Portfolio: [Click here !](https://shahulportfolio.vercel.app/)
 ⭐ Support
 
